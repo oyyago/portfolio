@@ -4,8 +4,6 @@ import enJson from './translations/en.json';
 import ptJson from './translations/pt-br.json';
 import spJson from './translations/sp.json';
 
-
-
 i18n.use(initReactI18next).init({
     fallbackLng: "ptBR",
     interpolation: {
@@ -15,6 +13,5 @@ i18n.use(initReactI18next).init({
         ptBR:ptJson,
         en:enJson,
         sp:spJson
-
       }
   });
