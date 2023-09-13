@@ -1,41 +1,61 @@
 import React, { useState } from "react";
-import seta from '../assets/seta.svg';
-import br from "../assets/br.svg";
-import { useTranslation } from "react-i18next";
-import Options from "./flagOptions";
-import { Flag, Seta, Button, Father } from "./style";
+import Select from "react-select";
+import br from '../assets/teste.webp';
+import us from '../assets/us.svg';
+import es from '../assets/es.svg';
+import { Flag } from './style'
 
 const languageOptions = [
     {
-        name: "Portugues",
+        label: "Portugues",
         value: "ptBR",
-        flag: br
+        flag: br,
     },
+    {
+        label: "Spanish",
+        value: "sp",
+        flag: es,
+    },
+    {
+        label: "English",
+        value: "en",
+        flag: us,
+    }
 ]
 
-export default function LanguageSwitcher() {
-    const [open, setOpen] = useState(false);
-    const [selectedFlag, setSelectedFlag] = useState(br);
-    const [selectedName, setSelectedName] = useState(languageOptions[0].name)
-    const { i18n } = useTranslation();
+export const LanguageSwitcher = () => {
+    const [selectedLanguage, setSelectedLanguage] = useState(languageOptions[0]);
 
-    const handleOpen = () => {
-        setOpen(!open);
-    }
+    const handleChange = (selectedOption) => {
+        setSelectedLanguage(selectedOption);
+    };
 
-    const handleLanguageChange = (languageOption) => {
-        i18n.changeLanguage(languageOption.value);
-        setSelectedFlag(languageOption.flag);
-        setSelectedName(languageOption.name)
-        setOpen(false);
-    }
     return (
-        <Father>
-            <Button style={{ color: "black" }} onClick={handleOpen}>
-                <span><Flag src={selectedFlag} />
-                    <Seta src={seta} /></span>
-                <p>{selectedName}</p>
-            </Button>
-            {open ? (<Options handleLanguageChange={handleLanguageChange} />) : null}
-        </Father>)
+        <div>
+            <Select
+                value={selectedLanguage}
+                onChange={handleChange}
+                options={languageOptions}
+                isSearchable={false}
+                styles={{
+                    control: (provided) => ({
+                        ...provided,
+                        width: "170px",
+                    }),
+                }}
+                components={{
+                    Option: CustomOption,
+                }}
+            />
+        </div>
+    );
 }
+
+const CustomOption = ({ innerProps, label, data }) => (
+    <div {...innerProps}>
+        <Flag src={data.flag} alt={label} style={{ marginRight: "10px" }} />
+        {label}
+    </div>
+);
+
+export default LanguageSwitcher;

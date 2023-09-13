@@ -25,7 +25,6 @@ export const Embeded = styled.div`
     }
 `
 
-
 export const Photo = styled.img`
 margin-left: 40px;
 margin-right: 30px;

@@ -1,7 +1,7 @@
 import React from "react";
 import es from "../assets/es.svg";
 import us from "../assets/us.svg";
-import br from "../assets/br.svg";
+import br from "../assets/br.webp";
 import { Flag, Button } from "./style";
 
 const languageOptions = [
@@ -11,15 +11,15 @@ const languageOptions = [
         flag: es
     },
     {
+        name: "Portugues",
+        value: "ptBR",
+        flag: br
+    },
+    {
         name: "English",
         value: "en",
         flag: us
     },
-    {
-      name: "Portugues",
-      value: "ptBR",
-      flag: br
-  }
 ]
 
 export default function Options({ handleLanguageChange }) {
