@@ -1,6 +1,7 @@
 {
     "translation":{
-        "select your language":"spanhis",
-        "welcome":"hola como andas manito"
+        "about":"acerca",
+        "skils":"skils",
+        "projects":"proyectos"
     }
 }

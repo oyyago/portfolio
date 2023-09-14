@@ -3,7 +3,8 @@ import Select from "react-select";
 import br from '../assets/teste.webp';
 import us from '../assets/us.svg';
 import es from '../assets/es.svg';
-import { Flag } from './style'
+import { Flag, FatherFlag } from './style';
+import { useTranslation } from "react-i18next";
 
 const languageOptions = [
     {
@@ -21,7 +22,7 @@ const languageOptions = [
         value: "en",
         flag: us,
     }
-]
+];
 
 export const LanguageSwitcher = () => {
     const [selectedLanguage, setSelectedLanguage] = useState(languageOptions[0]);
@@ -29,9 +30,8 @@ export const LanguageSwitcher = () => {
     const handleChange = (selectedOption) => {
         setSelectedLanguage(selectedOption);
     };
-
     return (
-        <div>
+        <div style={{ width: "180px", marginRight: "40px" }}>
             <Select
                 value={selectedLanguage}
                 onChange={handleChange}
@@ -40,7 +40,8 @@ export const LanguageSwitcher = () => {
                 styles={{
                     control: (provided) => ({
                         ...provided,
-                        width: "170px",
+                        width: "180px",
+                        border: "none"
                     }),
                 }}
                 components={{
@@ -49,13 +50,17 @@ export const LanguageSwitcher = () => {
             />
         </div>
     );
-}
+};
 
-const CustomOption = ({ innerProps, label, data }) => (
-    <div {...innerProps}>
-        <Flag src={data.flag} alt={label} style={{ marginRight: "10px" }} />
-        {label}
-    </div>
-);
+function CustomOption({ innerProps, label, data }) {
+    const { i18n } = useTranslation();
+
+    return (
+        <FatherFlag {...innerProps}>
+            <Flag onClick={() => { i18n.changeLanguage(data.value) }} src={data.flag} alt={label} />
+            <p>{label}</p>
+        </FatherFlag>
+    )
+};
 
 export default LanguageSwitcher;
