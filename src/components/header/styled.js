@@ -97,9 +97,7 @@ export const MobileMenu = styled.div`
         color: black;
     }
 
-    @media (max-width: 768px) {
 
-}
 `;
 
 export const LanguageSwitcherWrapper = styled.div`

@@ -3,7 +3,7 @@ import Select from "react-select";
 import br from '../assets/teste.webp';
 import us from '../assets/us.svg';
 import es from '../assets/es.svg';
-import { Flag, FatherFlag } from './style';
+import { Flag, Father, FatherFlag } from './style';
 import { useTranslation } from "react-i18next";
 
 const languageOptions = [
@@ -31,7 +31,7 @@ export const LanguageSwitcher = () => {
         setSelectedLanguage(selectedOption);
     };
     return (
-        <div style={{ width: "180px", marginRight: "40px" }}>
+        <Father>
             <Select
                 value={selectedLanguage}
                 onChange={handleChange}
@@ -48,7 +48,7 @@ export const LanguageSwitcher = () => {
                     Option: CustomOption,
                 }}
             />
-        </div>
+        </Father>
     );
 };
 
