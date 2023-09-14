@@ -2,8 +2,12 @@
     "translation": {
         "select your language": "english",
         "welcome": "welcome to the litle boy",
-        "about":"about",
-        "skils":"skils",
-        "projects":"projects"
+        "about":"About",
+        "skils":"Skils",
+        "projects":"Projects",
+        "name":"Yago",
+        "mainT":"Hi! I'm",
+        "mainD":"I'm a fullstack developer focused on creating web applications with a passion for solving technological challenges."
+    
     }
 }

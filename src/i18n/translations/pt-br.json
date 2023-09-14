@@ -1,9 +1,10 @@
 {
     "translation": {
-        "select your language": "wjenrwe",
-        "welcome": "welcome to the litle mato",
         "about":"Sobre",
-        "skils":"skils",
-        "projects":"projetos"
+        "skils":"Tecnologias",
+        "projects":"Projetos",
+        "name":"Yago",
+        "mainT":"Ola Me chamo",
+        "mainD":"Sou um desenvolvedor fullstack focado na criação de aplicações web com paixão pela resolução de desafios tecnológicos."
     }
 }

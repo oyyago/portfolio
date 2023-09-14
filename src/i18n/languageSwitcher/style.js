@@ -20,7 +20,7 @@ width:60px;
 
 export const Father = styled.div`
 width: "180px";
-margin: 40px;
+margin-right: 40px;
 @media (max-width: 768px) {
     margin: 0;
 } 

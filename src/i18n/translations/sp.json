@@ -1,7 +1,11 @@
 {
     "translation":{
-        "about":"acerca",
-        "skils":"skils",
-        "projects":"proyectos"
+        "about":"Acerca",
+        "skils":"Tecnologías",
+        "projects":"Proyectos",
+        "name":"Yago",
+        "mainT":"¡Hola! soy",
+        "mainD":"Soy un desarrollador fullstack enfocado en la creación de aplicaciones web con pasión por resolver desafíos tecnológicos."
+    
     }
 }
