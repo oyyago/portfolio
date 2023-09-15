@@ -1,6 +1,7 @@
 import Header from "./components/header";
 import {Main} from "./components/main";
 import About from "./components/about";
+import Tools from "./components/tools";
 
 export default function App() {
 
@@ -9,6 +10,6 @@ export default function App() {
       <Header />
       <Main/>
       <About />
-
+      <Tools/>
     </>);
 };

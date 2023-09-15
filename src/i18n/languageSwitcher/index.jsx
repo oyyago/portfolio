@@ -41,7 +41,8 @@ export const LanguageSwitcher = () => {
                     control: (provided) => ({
                         ...provided,
                         width: "180px",
-                        border: "none"
+                        border: "none",
+                        cursor: "pointer"
                     }),
                 }}
                 components={{

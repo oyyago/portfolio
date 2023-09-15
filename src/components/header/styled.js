@@ -1,14 +1,20 @@
 import styled from "styled-components";
 
-export const Cabecalho = styled.header`
-    height: 64px;
+
+export const Pai= styled.header`
+    position: fixed;
+`
+
+export const Cabecalho = styled.div`
+    height: 54px;
     width: 100%;
+    position: fixed;
+    box-shadow: 20px 10px 10px rgba(11,1,1,0.13);
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    position: relative;
 
     .menu-icon {
         display: none;
@@ -55,11 +61,43 @@ export const Embeded = styled.div`
     align-items: center;
 
     a {
-        text-decoration: none;
-        font-size: 20px;
-        margin-left: 20px;
-        color: black;
-    }
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #000 50%
+  );
+  margin-left: 18px;
+  font-size: 14px;
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before{
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before{
+  width: 100%;
+}
     @media (max-width: 768px) {
         display: none;
         
@@ -67,17 +105,15 @@ export const Embeded = styled.div`
 `;
 
 export const Photo = styled.img`
-    height: 50px;
-    margin-right: 20px;
+    height: 45px;
+    margin-right: 10px;
+    margin-left: 15px;
 `;
 
 export const MobileMenuWrapper = styled.div`
     display: flex;
     align-items: center;
 
-    @media (max-width: 768px) {
-
-    }
 `;
 
 export const MobileMenu = styled.div`
@@ -86,7 +122,7 @@ export const MobileMenu = styled.div`
     flex-direction: column;
     padding: 20px;
     border-left: 1px solid #ddd;
-    position: absolute;
+    position: fixed;
     top: 64px;
     right: 0;
 
@@ -96,8 +132,6 @@ export const MobileMenu = styled.div`
         margin-bottom: 10px;
         color: black;
     }
-
-
 `;
 
 export const LanguageSwitcherWrapper = styled.div`

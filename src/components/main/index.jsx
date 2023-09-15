@@ -1,6 +1,9 @@
 import { Social } from "./socials/social"
 import { useTranslation } from "react-i18next";
-import { Father, Son, Button1, Button2, Grandchild, LanguageSwitcherWrapper } from './styled.js';
+import { Father, Son, Button1, Button2, 
+    Grandchild, LanguageSwitcherWrapper,
+    BtnFather 
+} from './styled.js';
 
 export function Main() {
     const { t } = useTranslation();
@@ -15,10 +18,10 @@ export function Main() {
                     <h1>{t('mainT')} <span>{t('name')}</span></h1>
                     <p>{t('mainD')}</p>
                 </Grandchild>
-                <div style={{ marginLeft: "120px", marginTop:"40px" }}>
+                <BtnFather>
                     <Button1>get in touch</Button1>
                     <Button2>follow-me</Button2>
-                </div>
+                </BtnFather>
             </Son>
         </Father>
     );

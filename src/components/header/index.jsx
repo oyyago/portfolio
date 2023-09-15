@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../../i18n/languageSwitcher/index';
-import { Cabecalho, Photo, Embeded, MobileMenuWrapper, MobileMenu, LanguageSwitcherWrapper } from './styled';
+import { Cabecalho, Photo, Embeded, MobileMenuWrapper, MobileMenu, LanguageSwitcherWrapper, Pai } from './styled';
 
 export default function Header() {
     const { t } = useTranslation();
@@ -12,9 +12,9 @@ export default function Header() {
     };
 
     return (
-        <>
+        <Pai>
             <Cabecalho>
-                <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", fontSize:"15px" }}>
                     <Photo src="https://i.postimg.cc/TwY74D31/profile-pic-8.png" alt="my photo" />
                     <h2>Yago</h2>
                 </div>
@@ -42,6 +42,6 @@ export default function Header() {
                     </MobileMenu>
                 )}
             </MobileMenuWrapper>
-        </>
+        </Pai>
     );
 }

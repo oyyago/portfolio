@@ -25,7 +25,7 @@ export const Father = styled.div`
 
 export const Img = styled.img`
     height: 30px;
-    filter: grayscale(100); 
+    filter: grayscale(9); 
     &:hover{
         filter: grayscale(0);
         height: 35px;

@@ -7,15 +7,49 @@ border: none;
 margin-left: 4px;
 display: flex;
 text-align: center;
-p{
-    margin-bottom: 2px;
+
+    p{
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+p:before{
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+p:hover {
+ background-position: 0;
+}
+
+p:hover::before{
+  width: 100%;
 }
 `
-
 export const Flag = styled.img`
 height:40px;
 margin-right: 10px;
 width:60px;
+cursor: pointer;
 ` 
 
 export const Father = styled.div`
