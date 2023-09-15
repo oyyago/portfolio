@@ -1,9 +1,9 @@
 import React from 'react';
 import { Father, Img } from "./social.styled";
-import zap from './assets/wpp.svg';
-import linkedin from './assets/linkedin.svg';
-import github from './assets/github.svg';
-import email from './assets/email.svg';
+import zap from '../assets/wpp.svg';
+import linkedin from '../assets/linkedin.svg';
+import github from '../assets/github.svg';
+import email from '../assets/email.svg';
 
 export function Social() {
     return (

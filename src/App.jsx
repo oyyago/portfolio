@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import {Main} from "./components/main";
+import About from "./components/about";
 
 export default function App() {
 
@@ -7,5 +8,7 @@ export default function App() {
     <>
       <Header />
       <Main/>
+      <About />
+
     </>);
 };
