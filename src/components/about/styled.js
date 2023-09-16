@@ -1,16 +1,25 @@
 import styled from "styled-components";
 
 export const Section=styled.section`
-    height: 900px;
+ height: 900px;
     margin-top: 120px;
-    h1{
+
+    h1 {
         font-family: 'Gudea', sans-serif;
         font-size: 45px;
         margin-bottom: 0;
     }
-    p{
+
+    p {
         font-family: 'Habibi', serif;
         font-size: 24px;
+    }
+
+@media (max-width: 1200px) {
+    height: 1200px;
+}
+@media (max-width: 300px) {
+    height: 1200px;
 }
 `
 
@@ -36,7 +45,7 @@ export const SubS2= styled.div`
         height: 300px;
         border-radius: 900px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
     flex-direction: column;

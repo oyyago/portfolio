@@ -10,6 +10,7 @@ export default function App() {
       <Header />
       <Main/>
       <About />
+      <div></div>
       <Tools/>
     </>);
 };
