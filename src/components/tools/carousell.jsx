@@ -1,161 +1,92 @@
-import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import styled from 'styled-components';
+import React, { useEffect, useState, useRef } from 'react';
+import GlobalStyle from './styled';
 
-const CarouselContainer = styled.div`
-  position: relative;
-  height: 200px;
-  width: 810px;
-  margin: auto;
-`;
+import boot from './assets/bootstrap.svg';
+import css from './assets/css.svg';
+import express from './assets/express.svg';
+import figma from './assets/figma.svg';
+import git from './assets/git.svg';
+import html from './assets/html.svg';
+import java from './assets/java.svg';
+import js from './assets/javascript.svg';
+import linux from './assets/linux.svg';
+import mysql from './assets/mysql.svg';
+import postman from './assets/postman.svg';
+import react from './assets/react.svg';
+import spring from './assets/spring.svg';
+import sqlite from './assets/sqlite.svg';
+import ts from './assets/ts.svg';
+import vscode from './assets/vscode.svg'
+const imageList = [
+  boot, css, express, figma, git, html, java, js, linux, mysql, postman, react, spring, sqlite, ts, vscode
+];
 
-const Arrow = styled.div`
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  text-align: center;
-  font-size: 25px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 20px;
-  color: #228291;
-  line-height: 30px;
-  margin-top: 85px;
-  z-index: 1000;
 
-  &.arrow-left {
-    left: 0;
-  }
+export default function Home() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const ulRef = useRef(null);
+  const imagesPerPage = 16;
+  const scrollStep = 150;
 
-  &.arrow-right {
-    right: 0;
-  }
-`;
+  useEffect(() => {
+    const startIndex = (currentPage - 1) * imagesPerPage;
+    const endIndex = startIndex + imagesPerPage;
+    const pageImages = imageList.slice(startIndex, endIndex);
+    ulRef.current.scrollLeft = ulRef.current.scrollWidth / 3;
+  }, [currentPage]);
 
-const Item = styled.div`
-  text-align: center;
-  color: white;
-  font-size: 40px;
-  position: absolute;
-  transition: height 1s, width 1s, left 1s, margin-top 1s, line-height 1s, background-color 1s;
+  const handleScroll = () => {
+    if (ulRef.current) {
+      const { scrollLeft, clientWidth, scrollWidth } = ulRef.current;
+      const maxScroll = scrollWidth - clientWidth;
 
-  &.level-2 {
-    /* Estilos para level-2 */
-  }
-
-  &.level-1 {
-    /* Estilos para level-1 */
-  }
-
-  &.level0 {
-    /* Estilos para level0 */
-  }
-
-  &.level1 {
-    /* Estilos para level1 */
-  }
-
-  &.level2 {
-    /* Estilos para level2 */
-  }
-
-  &.left-enter {
-    /* Estilos para left-enter */
-  }
-
-  &.left-enter.left-enter-active {
-    /* Estilos para left-enter-active */
-  }
-
-  &.left-leave {
-    /* Estilos para left-leave */
-  }
-
-  &.left-leave.left-leave-active {
-    /* Estilos para left-leave-active */
-  }
-
-  &.right-enter {
-    /* Estilos para right-enter */
-  }
-
-  &.right-enter.right-enter-active {
-    /* Estilos para right-enter-active */
-  }
-
-  &.right-leave {
-    /* Estilos para right-leave */
-  }
-
-  &.right-leave.right-leave-active {
-    /* Estilos para right-leave-active */
-  }
-`;
-class Carousel extends Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        items: this.props.items,
-        active: this.props.active,
-        direction: '',
-      };
-      this.rightClick = this.moveRight.bind(this);
-      this.leftClick = this.moveLeft.bind(this);
-    }
-  
-    generateItems() {
-      const items = [];
-      for (let i = this.state.active - 2; i < this.state.active + 3; i++) {
-        let index = i;
-        if (i < 0) {
-          index = this.state.items.length + i;
-        } else if (i >= this.state.items.length) {
-          index = i % this.state.items.length;
-        }
-        const level = this.state.active - i;
-        items.push(
-          <CSSTransition key={index} classNames={this.state.direction} timeout={1000}>
-            <Item id={this.state.items[index]} level={level}>
-              {this.state.items[index]}
-            </Item>
-          </CSSTransition>
-        );
+      if (scrollLeft <= 0) {
+        setCurrentPage((prevPage) => prevPage + 1);
+        ulRef.current.scrollLeft = ulRef.current.scrollWidth / 3;
+      } else if (scrollLeft >= maxScroll) {
+        setCurrentPage((prevPage) => prevPage - 1);
+        ulRef.current.scrollLeft = ulRef.current.scrollWidth / 3;
       }
-      return items;
     }
-  
-    moveLeft() {
-      const newActive = this.state.active - 1;
-      this.setState({
-        active: newActive < 0 ? this.state.items.length - 1 : newActive,
-        direction: 'left',
-      });
+  };
+
+  useEffect(() => {
+    ulRef.current.addEventListener("scroll", handleScroll);
+    return () => {
+      ulRef.current.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScrollLeft = () => {
+    if (ulRef.current) {
+      ulRef.current.scrollLeft -= scrollStep;
     }
-  
-    moveRight() {
-      const newActive = (this.state.active + 1) % this.state.items.length;
-      this.setState({
-        active: newActive,
-        direction: 'right',
-      });
+  };
+
+  const handleScrollRight = () => {
+    if (ulRef.current) {
+      ulRef.current.scrollLeft += scrollStep;
     }
-  
-    render() {
-      return (
-        <CarouselContainer>
-          <Arrow className="arrow arrow-left" onClick={() => this.leftClick()}>
-            &lt;
-          </Arrow>
-          <TransitionGroup>
-            {this.generateItems()}
-          </TransitionGroup>
-          <Arrow className="arrow arrow-right" onClick={() => this.rightClick()}>
-            &gt;
-          </Arrow>
-        </CarouselContainer>
-      );
-    }
-  }
-  
-  export default Carousel;
+  };
+
+  return (
+    <main>
+      <GlobalStyle />
+      <h1>Scroll Infinito de Imagens</h1>
+      <h2>Página atual: {currentPage}</h2>
+      <div className="scroll-container">
+        <button onClick={handleScrollLeft}>{"<"}</button>
+        <ul ref={ulRef}>
+          {imageList.map((image, index) => (
+            <li key={index}>
+              <div>
+                <img src={image} alt={`Image ${index + 1}`} />
+              </div>
+            </li>
+          ))}
+        </ul>
+        <button onClick={handleScrollRight}>{">"}</button>
+      </div>
+    </main>
+  );
+}
