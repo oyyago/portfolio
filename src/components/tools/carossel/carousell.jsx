@@ -1,27 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { ScrollContainer, Ul, Li, LiImg, LiDiv } from './styled'; // Substitua 'SeuArquivoDeEstilos' pelo caminho correto
-
-import boot from '../assets/bootstrap.svg';
-import css from '../assets/css.svg';
-import express from '../assets/express.svg';
-import figma from '../assets/figma.svg';
-import git from '../assets/git.svg';
-import html from '../assets/html.svg';
-import java from '../assets/java.svg';
-import js from '../assets/javascript.svg';
-import linux from '../assets/linux.svg';
-import mysql from '../assets/mysql.svg';
-import postman from '../assets/postman.svg';
-import react from '../assets/react.svg';
-import spring from '../assets/spring.svg';
-import sqlite from '../assets/sqlite.svg';
-import ts from '../assets/ts.svg';
-import vscode from '../assets/vscode.svg';
-
-const imageList = [
-  boot, css, express, figma, git, html, java, js, linux, mysql, postman, react, spring, sqlite, ts, vscode,
-  boot, css, express, figma, git, html, java, js, linux, mysql, postman, react, spring, sqlite, ts, vscode
-];
+import { ScrollContainer, Ul, Li, LiImg, LiDiv, Button} from './styled';
+import tecnologias from './tecnologias';
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -29,7 +8,7 @@ export default function Home() {
   const scrollStep = 100;
 
   useEffect(() => {
-    ulRef.current.scrollLeft = ulRef.current.scrollWidth / 2.3;
+    ulRef.current.scrollLeft = ulRef.current.scrollWidth / 2.6;
   }, [currentPage]);
 
   const handleScrollLeft = () => {
@@ -45,18 +24,20 @@ export default function Home() {
   };
 
   return (
-      <ScrollContainer>
-        <button onClick={handleScrollLeft}>{"<"}</button>
-        <Ul ref={ulRef}>
-          {imageList.map((image, index) => (
-            <Li key={index}>
-              <LiDiv>
-                <LiImg src={image} alt={`Image ${index + 1}`} />
-              </LiDiv>
-            </Li>
-          ))}
-        </Ul>
-        <button onClick={handleScrollRight}>{">"}</button>
-      </ScrollContainer>
+    <ScrollContainer>
+      <Button onClick={handleScrollLeft}>{"<"}</Button>
+      <Ul ref={ulRef}>
+        {tecnologias.map((tecnologia, index) => (
+          <Li key={index}>
+            <LiDiv>
+              <LiImg src={tecnologia.caminho} alt={tecnologia.titulo} 
+              />
+              <span>{tecnologia.titulo}</span>
+            </LiDiv>
+          </Li>
+        ))}
+      </Ul>
+      <Button onClick={handleScrollRight}>{">"}</Button>
+    </ScrollContainer>
   );
 }

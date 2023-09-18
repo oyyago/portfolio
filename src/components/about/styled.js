@@ -14,7 +14,7 @@ export const Section=styled.section`
         font-family: 'Habibi', serif;
         font-size: 24px;
     }
-
+    
 @media (max-width: 1200px) {
     height: 1200px;
 }
