@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Pai= styled.header`
     position: fixed;
+    z-index: 9;
 `
 
 export const Cabecalho = styled.div`

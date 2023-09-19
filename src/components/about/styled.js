@@ -16,7 +16,7 @@ export const Section=styled.section`
     }
     
 @media (max-width: 1200px) {
-    height: 1200px;
+    height: 900px;
 }
 @media (max-width: 300px) {
     height: 1200px;
@@ -31,12 +31,21 @@ export const SubS = styled.div`
     align-items: center;
     margin-left: 70px;
     margin-right: 70px;
+    p{
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 300;
+    }
+    @media (max-width: 1200px) {
+    margin: 20px;
+    }
+
 
 `
 
 export const SubS2= styled.div`
     display: flex;
     flex-direction: row-reverse;
+
     h2{
         font-size: 35px;
         font-family: 'Gudea', sans-serif;
@@ -58,11 +67,17 @@ export const SubS2= styled.div`
 export const Div=styled.div`
     margin-left: 60px;
     margin-right: 150px;
+    p{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
     @media (max-width: 768px) {
-        margin-left: 60px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     p{
         margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 `

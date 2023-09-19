@@ -7,7 +7,7 @@ import email from '../assets/email.svg';
 
 export function Social() {
     return (
-        <section style={{marginRight:"10px"}}>
+        <section>
             <Father>
                 <a href="https://www.linkedin.com/in/yago-de-sousa-6b6b8a229/" target='_blank'><Img src={linkedin} alt="linkedin" /></a>
                 <a href="https://github.com/oyyago" target='_blank'><Img src={github} alt="github" /></a>

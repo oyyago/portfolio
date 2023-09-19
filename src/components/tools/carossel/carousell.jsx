@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { ScrollContainer, Ul, Li, LiImg, LiDiv, Button} from './styled';
+import { Ul, Li, LiImg, LiDiv, Button } from './styled';
 import tecnologias from './tecnologias';
 
 export default function Home() {
@@ -24,13 +24,13 @@ export default function Home() {
   };
 
   return (
-    <ScrollContainer>
+    <div style={{display:"flex", flexDirection:"row", margin:"0px 25px 0px 25px"}}>
       <Button onClick={handleScrollLeft}>{"<"}</Button>
       <Ul ref={ulRef}>
         {tecnologias.map((tecnologia, index) => (
           <Li key={index}>
             <LiDiv>
-              <LiImg src={tecnologia.caminho} alt={tecnologia.titulo} 
+              <LiImg src={tecnologia.caminho} alt={tecnologia.titulo}
               />
               <span>{tecnologia.titulo}</span>
             </LiDiv>
@@ -38,6 +38,6 @@ export default function Home() {
         ))}
       </Ul>
       <Button onClick={handleScrollRight}>{">"}</Button>
-    </ScrollContainer>
+    </div>
   );
 }

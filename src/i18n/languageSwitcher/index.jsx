@@ -42,7 +42,7 @@ export const LanguageSwitcher = () => {
                         ...provided,
                         width: "180px",
                         border: "none",
-                        cursor: "pointer"
+                        cursor: "pointer",
                     }),
                 }}
                 components={{

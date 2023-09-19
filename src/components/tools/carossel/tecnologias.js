@@ -16,135 +16,140 @@ import ts from '../assets/ts.svg';
 import vscode from '../assets/vscode.svg';
 
 
+
 const tecnologias = [
+  
   {
-    titulo: "Bootstrap",
-    caminho: boot,
+    "titulo": "Java",
+    "caminho": java
   },
   {
-    titulo: "CSS",
-    caminho: css,
+    "titulo": "JavaScript",
+    "caminho": js
   },
   {
-    titulo: "Express",
-    caminho: express
+    "titulo": "TypeScript",
+    "caminho": ts
   },
   {
-    titulo: "Figma",
-    caminho: figma,
+    "titulo": "Spring",
+    "caminho": spring
   },
   {
-    titulo: "Git",
-    caminho: git,
+    "titulo": "React",
+    "caminho": react
+  },
+
+  {
+    "titulo": "ExpressJs",
+    "caminho": express
   },
   {
-    titulo: "HTML",
-    caminho: html,
+    "titulo": "CSS",
+    "caminho": css
   },
   {
-    titulo: "Java",
-    caminho: java,
+    "titulo": "HTML",
+    "caminho": html
   },
   {
-    titulo: "JavaScript",
-    caminho: js,
+    "titulo": "Figma",
+    "caminho": figma
   },
   {
-    titulo: "Linux",
-    caminho: linux,
+    "titulo": "Bootstrap",
+    "caminho": boot
   },
   {
-    titulo: "MySQL",
-    caminho: mysql,
+    "titulo": "Git",
+    "caminho": git
   },
   {
-    titulo: "Postman",
-    caminho: postman,
+    "titulo": "Linux",
+    "caminho": linux
   },
   {
-    titulo: "React",
-    caminho: react,
+    "titulo": "MySQL",
+    "caminho": mysql
   },
   {
-    titulo: "Spring",
-    caminho: spring,
+    "titulo": "Postman",
+    "caminho": postman
   },
   {
-    titulo: "SQLite",
-    caminho: sqlite,
+    "titulo": "VsCode",
+    "caminho": vscode
   },
   {
-    titulo: "TypeScript",
-    caminho: ts,
+    "titulo": "SQLite",
+    "caminho": sqlite
+  }
+  ,{
+    "titulo": "Java",
+    "caminho": java
   },
   {
-    titulo: "VsCode",
-    caminho: vscode
+    "titulo": "JavaScript",
+    "caminho": js
   },
   {
-    titulo: "Bootstrap",
-    caminho: boot,
+    "titulo": "TypeScript",
+    "caminho": ts
   },
   {
-    titulo: "CSS",
-    caminho: css,
+    "titulo": "Spring",
+    "caminho": spring
   },
   {
-    titulo: "Express",
-    caminho: express
+    "titulo": "React",
+    "caminho": react
+  },
+
+  {
+    "titulo": "ExpressJs",
+    "caminho": express
   },
   {
-    titulo: "Figma",
-    caminho: figma,
+    "titulo": "CSS",
+    "caminho": css
   },
   {
-    titulo: "Git",
-    caminho: git,
+    "titulo": "HTML",
+    "caminho": html
   },
   {
-    titulo: "HTML",
-    caminho: html,
+    "titulo": "Figma",
+    "caminho": figma
   },
   {
-    titulo: "Java",
-    caminho: java,
+    "titulo": "Bootstrap",
+    "caminho": boot
   },
   {
-    titulo: "JavaScript",
-    caminho: js,
+    "titulo": "Git",
+    "caminho": git
   },
   {
-    titulo: "Linux",
-    caminho: linux,
+    "titulo": "Linux",
+    "caminho": linux
   },
   {
-    titulo: "MySQL",
-    caminho: mysql,
+    "titulo": "MySQL",
+    "caminho": mysql
   },
   {
-    titulo: "Postman",
-    caminho: postman,
+    "titulo": "Postman",
+    "caminho": postman
   },
   {
-    titulo: "React",
-    caminho: react,
+    "titulo": "VsCode",
+    "caminho": vscode
   },
   {
-    titulo: "Spring",
-    caminho: spring,
-  },
-  {
-    titulo: "SQLite",
-    caminho: sqlite,
-  },
-  {
-    titulo: "TypeScript",
-    caminho: ts,
-  },
-  {
-    titulo: "VsCode",
-    caminho: vscode
-  },
+    "titulo": "SQLite",
+    "caminho": sqlite
+  }
 ];
+
 
 export default tecnologias;

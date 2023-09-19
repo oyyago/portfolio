@@ -8,6 +8,7 @@ margin-left: 4px;
 display: flex;
 text-align: center;
 
+
     p{
   background-image: linear-gradient(
     to right,
@@ -15,6 +16,7 @@ text-align: center;
     #54b3d6 50%,
     #000 50%
   );
+  margin: 0;
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -46,9 +48,10 @@ p:hover::before{
 }
 `
 export const Flag = styled.img`
-height:40px;
+height:30px;
+margin-bottom: 0;
 margin-right: 10px;
-width:60px;
+width:45px;
 cursor: pointer;
 ` 
 

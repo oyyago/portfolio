@@ -1,25 +1,5 @@
 import styled from 'styled-components';
 
-
-export const ScrollContainer = styled.div`
-  display: flex;
-  height: 150px;
-  max-width: 100%; 
-  margin-top: 30px;
-  padding: 10px;
-
-  @media (max-width: 768px) {
-    margin-top: 400px;
-    padding: 5px;
-  }
-
-  @media (max-width: 480px) {
-    margin-top:1200px;
-    padding: 3px;
-  }
-`;
-
-
 export const Button = styled.button`
     background-color: Transparent;
     background-repeat:no-repeat;
@@ -65,19 +45,31 @@ export const Li = styled.li`
         filter: grayscale(0);
         height: 35px;
     }
+    @media (max-width: 1200px) {
+      filter: grayscale(0);
+  }
 `;
 
 export const LiImg = styled.img`
-  --size: 50px;
+  --size: 80px;
   width: var(--size);
   height: var(--size);
-  border-radius: 50%;
-`;
+  border-radius: 10%;
+  `;
 
 export const LiDiv = styled.div`
 display: flex;
+--size:60px ;
+
+&:hover{
+  width: 110px;
+height: 100px;
+background-color: #cfdbe3;
+border-radius: 20px;
+}
+margin-bottom: 0;
 flex-direction: column;
+cursor: pointer;
 align-items: center;
 padding: 15px;
-  height: calc(100% - 30px);
 `;

@@ -4,12 +4,17 @@
         "skils": "Tecnologias",
         "projects": "Projetos",
         "name": "Yago",
+        "dev":"Sou Desenvolvedor de Software",
         "mainT": "Ola Me chamo",
-        "mainD": "Sou um desenvolvedor fullstack focado na criação de aplicações web com paixão pela resolução de desafios tecnológicos.",
+        "mainD": "Uma combinação de desenvolvimento back-end e front-end, simplesmente apaixonado por tecnologia.",
         "aboutT": "Sobre Mim",
-        "aboutSb": "Meu nome é Yago, sou desenvolvedor web, é atuo na área há cerca de um ano. Tenho experiência sólida em front-end é back-end, e estou sempre buscando aprender e evoluir. Estou entusiasmado para colaborar em projetos desafiadores e contribuir para equipes talentosas.        ",
+        "aboutSb": "Meu nome é Yago, sou desenvolvedor web e atuo na área como freelancer há cerca de um ano. Tenho experiência sólida tanto em front-end quanto em back-end.",
         "aboutT2": "Mais Sobre mim",
-        "aboutSb2": "Minha paixão por tecnologia se iniciou em 2020, quando eu criava sites em plataformas como : Shopify e Cartpanda, para um E-commerce que eu tinha. Em 2021 eu entrei na área da programação já com o foco em colocar a mão na massa e desenvolver Layouts com design mais atuais e agradáveis, Juntamente com parte Server Side muito bem estruturada.",
-        "aboutSb3":"Tenho conhecimento e experência em JavaScript, TypeScript, HTML, CSS, React é Express. Estudo todos os dias sobre diversas maneiras de potencializar meu resultados por meio da programação, então estou sempre pesquisando sobre novas Tecnologias é me especializando nas que eu ja conheço e também estou me aprofundadndo mais na frameworok Spring com Java."
+        "aboutSb2": "Minha paixão pela tecnologia começou em 2021, quando comecei a criar websites em plataformas como Shopify e Cartpanda para o meu próprio E-commerce. Em 2022, mergulhei de cabeça na área da programação, direcionando minha energia para aprender e aplicar meus conhecimentos.",
+        "aboutSb3":"Como hobby, tenho grande interesse em estudar idiomas e desfrutar de boa música. Essas atividades me proporcionam um equilíbrio perfeito para complementar minha paixão pelo mundo da tecnologia.",
+        "tools":"Linguagens é Tecnologias",
+        "projectsT":"Projetos",
+        "projectsD":"Alguns projetos pessoais que criei simplesmente para praticar as tecnologias que utilizo no meu dia a dia."
+    
     }
 }

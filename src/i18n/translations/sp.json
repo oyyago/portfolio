@@ -4,12 +4,16 @@
         "skils": "Tecnologías",
         "projects": "Proyectos",
         "name": "Yago",
+        "dev":"Desarrollador de Software",
         "mainT": "¡Hola! soy",
         "mainD": "Soy un desarrollador fullstack enfocado en la creación de aplicaciones web con pasión por resolver desafíos tecnológicos.",
         "aboutT": "Acerca de mí",
         "aboutSb": "Mi nombre es Yago, soy desarrollador web y llevo trabajando en el campo durante aproximadamente un año. Tengo una sólida experiencia en front-end y back-end, y siempre estoy ansioso por aprender y evolucionar. Estoy emocionado por colaborar en proyectos desafiantes y contribuir a equipos talentosos.",
         "aboutT2": "Más sobre mí",
         "aboutSb2": "Mi pasión por la tecnología comenzó en 2020 cuando creaba sitios web en plataformas como Shopify y Cartpanda para un negocio de comercio electrónico que tenía. En 2021, entré en el campo de la programación con un enfoque en obtener experiencia práctica y desarrollar diseños modernos y atractivos, junto con un componente de servidor bien estructurado.",
-        "aboutSb3": "Tengo conocimientos y experiencia en JavaScript, TypeScript, HTML, CSS, React y Express. Estudio todos los días para explorar diversas formas de mejorar mis resultados a través de la programación, por lo que siempre estoy investigando nuevas tecnologías y especializándome en las que ya conozco. Además, estoy profundizando en el framework Spring con Java."
-    }
+        "aboutSb3": "Tengo conocimientos y experiencia en JavaScript, TypeScript, HTML, CSS, React y Express. Estudio todos los días para explorar diversas formas de mejorar mis resultados a través de la programación, por lo que siempre estoy investigando nuevas tecnologías y especializándome en las que ya conozco. Además, estoy profundizando en el framework Spring con Java.",
+        "tools":"Lenguajes y Tecnologías",
+        "projectsT":"Proyectos",
+        "projectsD":"Algunos proyectos personales que creé simplemente para practicar las tecnologías que uso en mi vida diaria."
+        }
 }

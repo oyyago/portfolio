@@ -7,17 +7,19 @@ export const Father = styled.main`
     justify-content: center;
     align-items: center;
     padding-top: 60px;
+    margin-bottom: 400px;
     @media (max-width: 768px) {
         padding-top: 80px;
+        margin-bottom: 200px;
     }
     `
 
 export const LanguageSwitcherWrapper = styled.div`
     display: flex;
     align-items: center;
-    @media (max-width: 768px) {
-        display: none;
-    }
+    justify-content: center;
+
+    margin-top: 10px;
 `;
 
 export const Son = styled.main`
@@ -32,7 +34,9 @@ export const Grandchild = styled.div`
     align-items: center;
     text-align: center;
     margin-left: 50px;
+    margin-top:130px;
     margin-right: 50px;
+    margin-bottom: 50px;
     @media (max-width: 768px) {
         margin-left: 20px;
         margin-right: 20px;
@@ -51,8 +55,8 @@ export const Grandchild = styled.div`
     }
     p{
         margin-bottom: 50px;
-        font-family: 'Habibi', serif;
-        font-weight: 100;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 300;
         font-size: 25px;
         @media (max-width: 768px) {
             font-size: 17px;
@@ -75,48 +79,103 @@ export const BtnFather = styled.div`
 ` 
 
 
-export const Button1 = styled.button`
-    margin-left: 20px;
-    height: 40px;
-    width: 200px;
-    background-color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    &:hover{
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        color: white;
-        background-color: black;
+export const Button1 = styled.a`
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  height: 15px;
+  border: 1px solid;
+    width: 140px;
+    text-align: center;
+&:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 20px;
+  z-index: -2;
+}
+&:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #161716;
+  transition: all 0.9s;
+  
+  border-radius: 10rem;
+  z-index: -1;
+}
+&:hover {
+  color: #fff;
+}
+&:hover:before {
+  width: 100%;
 }
 @media (max-width: 768px) {
     margin-left:4px;
-    height: 40px;
-    width: 140px;
+    height: 15px;
+    width: 125px;
 }
 
 `
 
-export const Button2 = styled.button`
-    margin-left: 20px;
-    height: 40px;
-    width: 200px;
-    background-color: white;
-    border: none;
-    border-radius: 20px;
-    border: 2px solid;
-    background-color: transparent;
-    cursor: pointer;
-    &:hover{
-        -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-        background-color: white;
-        border: 2px solid ;
-};
-@media (max-width: 768px) {
-    height: 40px;
+export const Button2 = styled.a`
+   padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: black;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  height: 15px;
+  border: 1px solid;
     width: 140px;
+    text-align: center;
+    margin-left: 20px;
+&:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 20px;
+  z-index: -2;
 }
+&:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #161716;
+  transition: all 0.9s;
+  
+  border-radius: 10rem;
+  z-index: -1;
+}
+&:hover {
+  color: #fff;
+}
+&:hover:before {
+  width: 100%;
+}
+@media (max-width: 768px) {
+    margin-left:4px;
+    height: 15px;
+    width: 125px;
+}
+
 `
