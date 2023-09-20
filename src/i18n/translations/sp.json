@@ -7,6 +7,8 @@
         "dev": "Soy Desarrollador de Software",
         "mainT": "Hola, me llamo",
         "mainD": "Una combinación de desarrollo de backend y frontend, simplemente apasionado por la tecnología.",
+        "btn1":"contáctame",
+        "btn2":"sígueme",
         "aboutT": "Sobre mí",
         "aboutSb": "Mi nombre es Yago, soy desarrollador web y he estado trabajando como freelancer durante aproximadamente un año. Tengo una sólida experiencia tanto en el frontend como en el backend.",
         "aboutT2": "Más sobre mí",

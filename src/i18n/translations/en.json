@@ -7,6 +7,8 @@
         "dev": "I am a Software Developer",
         "mainT": "Hello, my name is",
         "mainD": "A combination of backend and frontend development, simply passionate about technology.",
+        "btn1":"get in touch",
+        "btn2":"follow me",
         "aboutT": "About Me",
         "aboutSb": "My name is Yago, and I have been working as a freelance web developer for about a year. I have solid experience in both frontend and backend.",
         "aboutT2": "More About Me",

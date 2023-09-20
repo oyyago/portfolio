@@ -17,8 +17,8 @@ export function Main() {
                     <p>{t('mainD')}</p>
                 </Grandchild>
                 <BtnFather>
-                    <Button1>get in touch</Button1>
-                    <Button2>follow-me</Button2>
+                        <Button1 href="mailto:yyagoaraujo@gmail.com?subject=Ola !!!&body=Oi%20Yago%20..." target="_blank">{t("btn1")}</Button1>
+                        <Button2 href="https://www.linkedin.com/in/yago-de-sousa-6b6b8a229/" target="_blank" >{t("btn2")}</Button2>
                 </BtnFather>
                 <LanguageSwitcherWrapper>
                 <Social/>

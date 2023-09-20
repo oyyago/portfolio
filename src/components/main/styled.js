@@ -89,6 +89,7 @@ export const Button1 = styled.a`
   z-index: 1;
   height: 15px;
   border: 1px solid;
+  text-decoration: none;
     width: 140px;
     text-align: center;
 &:after {
@@ -133,6 +134,7 @@ export const Button2 = styled.a`
    padding: 0.75rem 1.25rem;
   border-radius: 10rem;
   color: black;
+  text-decoration: none;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
