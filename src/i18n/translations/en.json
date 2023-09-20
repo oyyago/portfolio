@@ -1,7 +1,5 @@
 {
     "translation": {
-        "select your language": "english",
-        "welcome": "welcome to the litle boy",
         "about": "About",
         "skils": "Skils",
         "projects": "Projects",
@@ -16,6 +14,8 @@
         "aboutSb3": "I have knowledge and experience in JavaScript, TypeScript, HTML, CSS, React, and Express. I study every day to explore various ways to enhance my results through programming, so I am always researching new technologies and specializing in the ones I already know. Additionally, I am delving deeper into the Spring framework with Java.",
         "tools":"Languages and technologies",
         "projectsT":"Projects",
-        "projectsD":"Some personal projects that I created simply to practice the technologies I use in my daily life."
+        "projectsD":"Some personal projects that I created simply to practice the technologies I use in my daily life.",
+        "footer": "Today you have the opportunity to build the tomorrow you desire",
+        "footer2": "Developed by:"
     }
 }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../../i18n/languageSwitcher/index';
 import { Cabecalho, Photo, Embeded, MobileMenuWrapper, MobileMenu, LanguageSwitcherWrapper, Pai } from './styled';
+import im from '../../../public/EMOJIZE.webp'
 
 export default function Header() {
     const { t } = useTranslation();
@@ -15,7 +16,7 @@ export default function Header() {
         <Pai>
             <Cabecalho>
                 <div style={{ display: "flex", flexDirection: "row", alignItems: "center", fontSize:"15px" }}>
-                    <Photo src="https://i.postimg.cc/TwY74D31/profile-pic-8.png" alt="my photo" />
+                    <Photo src={im} alt="my photo" />
                     <h2>Yago</h2>
                 </div>
                 <Embeded>

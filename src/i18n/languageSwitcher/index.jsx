@@ -8,6 +8,11 @@ import { useTranslation } from "react-i18next";
 
 const languageOptions = [
     {
+        label: "English",
+        value: "en",
+        flag: us,
+    }
+    ,{
         label: "Portugues",
         value: "ptBR",
         flag: br,
@@ -17,11 +22,7 @@ const languageOptions = [
         value: "sp",
         flag: es,
     },
-    {
-        label: "English",
-        value: "en",
-        flag: us,
-    }
+
 ];
 
 export const LanguageSwitcher = () => {
@@ -58,8 +59,10 @@ function CustomOption({ innerProps, label, data }) {
 
     return (
         <FatherFlag {...innerProps}>
-            <Flag onClick={() => { i18n.changeLanguage(data.value) }} src={data.flag} alt={label} />
-            <p>{label}</p>
+            <div style={{margin:"0"}} onClick={() => { i18n.changeLanguage(data.value) }}>
+                <Flag  src={data.flag} alt={label} />
+                <p>{label}</p>
+            </div>
         </FatherFlag>
     )
 };

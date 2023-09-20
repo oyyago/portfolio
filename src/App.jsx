@@ -10,12 +10,12 @@ export default function App() {
 
   return (
     <>
-    <Cursor />
-      <Header />
-      <Main />
-      <About />
-      <Tools />
-      <Projects />
-      <Footer />
+      <Cursor />
+        <Header />
+        <Main />
+        <About />
+        <Tools />
+        <Projects />
+        <Footer />
     </>);
 };

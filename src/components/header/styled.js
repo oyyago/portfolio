@@ -109,6 +109,8 @@ export const Photo = styled.img`
     height: 45px;
     margin-right: 10px;
     margin-left: 15px;
+    border-radius: 90px;
+    background-color: blue;
 `;
 
 export const MobileMenuWrapper = styled.div`

@@ -40,7 +40,7 @@ export const Li = styled.li`
   padding: 15px;
   transition: transform 0.3s ease;
   display: inline-block;
-    filter: grayscale(9); 
+    filter: grayscale(90%); 
     &:hover{
         filter: grayscale(0);
         height: 35px;

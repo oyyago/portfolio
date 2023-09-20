@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Section, SubS, SubS2, Div, Div2, Osmose } from './styled'
+import im from './im.png';
+
 
 export default function About() {
 
@@ -14,7 +16,7 @@ export default function About() {
             </SubS>
             <SubS2>
             <Div2>
-                    <img src="https://www.benrobo.co/assets/img/profile/Profile-2.png" alt="Foto Yago" />
+                    <img  src={im} alt="Foto Yago" />
                 </Div2>
                 <Div>
                     <h2>{t('aboutT2')}</h2>

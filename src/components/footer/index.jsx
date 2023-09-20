@@ -8,15 +8,19 @@ import {
   Content,
   MainFooterCopy,Line,Links,Img,A,Sub
 } from "./style";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t }= useTranslation()
+
+
   return (
     <MainFooter className="container">
         <Content>
           <div style={{marginLeft:"40px"}}>
             <h2>Yago de Sousa</h2>
             <Line/>
-            <p>hoje você tem a oportunidade de construir o amanhã que você deseja</p>
+            <p>{t("footer")}</p>
           </div>
           <Sub>
             <h3>SOCIAL</h3>
@@ -31,8 +35,9 @@ export default function Footer() {
 
       <MainFooterCopy>
         <p className="by">
-          <i className="icon icon-heart-3"></i> Desenvolvido por:
+          <i className="icon icon-heart-3"></i>
           <a>
+            {t("footer2")} 
             Yago
           </a>
         </p>

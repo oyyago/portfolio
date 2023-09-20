@@ -9,6 +9,5 @@ export default function Tools() {
       <h1>{t("tools")}</h1>
       <Carrosel />
     </ScrollContainer>
-
   )
 }

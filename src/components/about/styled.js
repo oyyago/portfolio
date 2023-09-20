@@ -51,8 +51,8 @@ export const SubS2= styled.div`
         font-family: 'Gudea', sans-serif;
     }
     img{
-        height: 300px;
-        border-radius: 900px;
+        height: 360px;
+        border-radius: 1000px;
     }
     @media (max-width: 1200px) {
     display: flex;
