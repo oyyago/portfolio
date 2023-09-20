@@ -6,11 +6,11 @@ export const Father = styled.main`
     height: 450px;
     justify-content: center;
     align-items: center;
-    padding-top: 60px;
+    padding-top: 40px;
     margin-bottom: 400px;
     @media (max-width: 768px) {
-        padding-top: 80px;
-        margin-bottom: 200px;
+        padding-top: 60px;
+        margin-bottom: 190px;
     }
     `
 

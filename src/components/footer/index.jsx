@@ -19,7 +19,6 @@ export default function Footer() {
         <Content>
           <div style={{marginLeft:"40px"}}>
             <h2>Yago de Sousa</h2>
-            <Line/>
             <p>{t("footer")}</p>
           </div>
           <Sub>

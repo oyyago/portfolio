@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const Pai= styled.header`
-    position: fixed;
     z-index: 9;
     height: 100%;
 `
@@ -10,13 +9,11 @@ export const Pai= styled.header`
 export const Cabecalho = styled.div`
     height: 54px;
     width: 100%;
-    position: fixed;
     box-shadow: 20px 10px 10px rgba(11,1,1,0.13);
     background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 
     .menu-icon {
         display: none;

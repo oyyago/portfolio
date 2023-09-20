@@ -3,25 +3,30 @@ import styled from "styled-components";
 export const Father = styled.section`
   display: flex;
   flex-direction: column;
+  overflow-x: auto;
+  
+  @media (max-width: 590px) {
+    height: 700px;
+    width: 590px;
+  }
 `;
 
 export const Ul = styled.ul`
-  max-height: 450px;
+  max-height: 350px;
+  max-width: 500px;
   padding: 0;
   overflow-x: auto;
   overflow-y: hidden;
   background-color: #ddd;
   margin: 0;
   display: flex;
-  margin-left: 60px;
-  margin-right: 60px;
-  justify-content: flex-start;
-  @media (max-width: 420px) {
-    margin:0; 
-  }
+  flex-direction: row; /* Inicialmente, renderizado em linha */
+  flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+  justify-content: center; /* Centralizar elementos na linha */
+  width: 100%;
 
   &::-webkit-scrollbar {
-    height: 5px;
+    width: 5px;
   }
 
   &::-webkit-scrollbar-track {
@@ -32,38 +37,38 @@ export const Ul = styled.ul`
     background-color: #888;
     border-radius: 5px;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Alteração para renderizar em coluna */
+  }
+`;
+
+export const Li = styled.li`
+  width: 45%; /* Ajuste conforme necessário para controlar o número de elementos por linha */
+  height: 200px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  @media (max-width: 768px) {
+    width: 100%; /* Em dispositivos menores, ocupe 100% da largura */
+  }
 `;
 
 
 export const Button = styled.button`
-height: 30px;
-border-radius: 30px;
-background-color: black;
-color: white;
-cursor: pointer;
+  height: 30px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 
-:hover{
-  background-color: white;
-color: black;
-}
+  &:hover {
+    background-color: white;
+    color: black;
+  }
 `;
 
 export const SubDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  color: white;
-  align-items: center;
-  margin: 0;
-
-`;
-
-
-export const Li = styled.li`
-  width: 350px;
-  height: 330px;
-  padding: 15px;
-  transition: transform 0.3s ease;
-  display: inline-block;
+ /* Espaçamento entre elementos em SubDiv */
 `;
 
 export const LiImg = styled.img`
@@ -79,13 +84,3 @@ export const LiImg = styled.img`
   }
 `;
 
-export const LiDiv = styled.div`
-  display: flex;
-  height: 330px;
-  background-color: #d1d0cd;
-  border-radius: 10px;
-  margin-bottom: 0;
-  flex-direction: column;
-  align-items: center;
-  padding: 15px;
-`;
