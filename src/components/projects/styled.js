@@ -16,6 +16,9 @@ export const Ul = styled.ul`
   margin-left: 60px;
   margin-right: 60px;
   justify-content: flex-start;
+  @media (max-width: 420px) {
+    margin:0; 
+  }
 
   &::-webkit-scrollbar {
     height: 5px;

@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
+export const Father = styled.div`
+display:flex; 
+flex-direction:column;
+margin:0px 25px 0px 25px;
+@media (max-width: 1200px) {
+margin-top: 500px;
+}
+
+`
+
+
 export const Button = styled.button`
     background-color: Transparent;
     background-repeat:no-repeat;

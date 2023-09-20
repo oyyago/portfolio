@@ -10,8 +10,8 @@ export default function App() {
 
   return (
     <>
-      <Cursor />
         <Header />
+      <Cursor />
         <Main />
         <About />
         <Tools />
