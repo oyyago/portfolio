@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 
-export const Pai= styled.header`
-    z-index: 9;
+export const Pai = styled.header`
+    z-index: 10;
     height: 100%;
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 `
 
 export const Cabecalho = styled.div`

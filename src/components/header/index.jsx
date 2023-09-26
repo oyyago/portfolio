@@ -26,7 +26,7 @@ export default function Header() {
                     <Link to="skils" smooth={true} duration={500}
                     >{t('skils')}
                     </Link>
-                    <a href="#">{t('projects')}</a>
+                    <Link to="projects" smooth={true} duration={500}>{t('projects')}</Link>
                 </Embeded>
                 <LanguageSwitcherWrapper>
                     <LanguageSwitcher />
@@ -40,9 +40,13 @@ export default function Header() {
             <MobileMenuWrapper>
                 {menuOpen && (
                     <MobileMenu>
-                        <a href="#">{t('about')}</a>
-                        <a href="#">{t('skils')}</a>
-                        <a href="#">{t('projects')}</a>
+                        <Link to="about" smooth={true} duration={500}>
+                            {t('about')}
+                        </Link>
+                        <Link to="skils" smooth={true} duration={500}
+                        >{t('skils')}
+                        </Link>
+                        <Link to="projects" smooth={true} duration={500}>{t('projects')}</Link>
                         <LanguageSwitcher />
                     </MobileMenu>
                 )}
