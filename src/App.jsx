@@ -7,7 +7,6 @@ import Cursor from "./components/cursor/cursor";
 import './App.css'
 
 export default function App() {
-  
   return (
     <>
       <Cursor />

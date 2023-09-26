@@ -8,8 +8,7 @@ export default function About() {
     const { t } = useTranslation();
 
     return (
-        <Section>
-            <ScrollMaker/>
+        <Section id="about">
             <SubS>
                 <h1>{t('aboutT')}</h1>
                     <Osmose />

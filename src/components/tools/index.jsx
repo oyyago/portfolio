@@ -4,7 +4,7 @@ import { ScrollContainer } from "./styled";
 
 export default function Tools() {
   return (
-    <ScrollContainer>
+    <ScrollContainer id="skils">
       <Carrosel />
     </ScrollContainer>
   )

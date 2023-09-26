@@ -3,11 +3,11 @@ import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../../i18n/languageSwitcher/index';
 import { Cabecalho, Photo, Embeded, MobileMenuWrapper, MobileMenu, LanguageSwitcherWrapper, Pai } from './styled';
 import im from '../../../public/EMOJIZE.webp'
+import { Link } from 'react-scroll';
 
 export default function Header() {
     const { t } = useTranslation();
     const [menuOpen, setMenuOpen] = useState(false);
-
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
@@ -15,13 +15,17 @@ export default function Header() {
     return (
         <Pai>
             <Cabecalho>
-                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", fontSize:"15px" }}>
+                <div style={{ display: "flex", flexDirection: "row", alignItems: "center", fontSize: "15px" }}>
                     <Photo src={im} alt="my photo" />
                     <h2>Yago</h2>
                 </div>
                 <Embeded>
-                    <a href="#">{t('about')}</a>
-                    <a href="#">{t('skils')}</a>
+                    <Link to="about" smooth={true} duration={500}>
+                        {t('about')}
+                    </Link>
+                    <Link to="skils" smooth={true} duration={500}
+                    >{t('skils')}
+                    </Link>
                     <a href="#">{t('projects')}</a>
                 </Embeded>
                 <LanguageSwitcherWrapper>
