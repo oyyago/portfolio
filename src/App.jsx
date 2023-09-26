@@ -12,11 +12,9 @@ export default function App() {
     <>
       <Cursor />
       <Header />
-    <div className="papai">
       <Main />
       <About />
       <Tools />
-    </div>
       <Footer />
     </>);
 };

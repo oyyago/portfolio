@@ -9,6 +9,7 @@ export default function About() {
 
     return (
         <Section>
+            <ScrollMaker/>
             <SubS>
                 <h1>{t('aboutT')}</h1>
                     <Osmose />

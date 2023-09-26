@@ -7,10 +7,7 @@ margin:0px 25px 0px 25px;
 @media (max-width: 1200px) {
 margin-top: 350px;
 }
-
 `
-
-
 export const Button = styled.button`
     background-color: Transparent;
     background-repeat:no-repeat;

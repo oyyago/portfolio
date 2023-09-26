@@ -7,6 +7,5 @@ export default function Tools() {
     <ScrollContainer>
       <Carrosel />
     </ScrollContainer>
-
   )
 }

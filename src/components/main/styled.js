@@ -110,14 +110,15 @@ export const Button1 = styled.a`
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #161716;
+  background-color: #f0f2f5;
   transition: all 0.9s;
+  color: black;
   
   border-radius: 10rem;
   z-index: -1;
 }
 &:hover {
-  color: #fff;
+  color: black;
 }
 &:hover:before {
   width: 100%;
