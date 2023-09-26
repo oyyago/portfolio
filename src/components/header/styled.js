@@ -4,10 +4,6 @@ import styled from "styled-components";
 export const Pai = styled.header`
     z-index: 10;
     height: 100%;
-    position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
 `
 
 export const Cabecalho = styled.div`
@@ -18,6 +14,9 @@ export const Cabecalho = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 10;
+
 
     .menu-icon {
         display: none;
