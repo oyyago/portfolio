@@ -1,0 +1,23 @@
+{
+    "translation": {
+        "about": "Acerca de",
+        "skills": "Tecnologías",
+        "projects": "Proyectos",
+        "name": "Yago",
+        "dev": "Soy Desarrollador de Software",
+        "mainT": "Hola, me llamo",
+        "mainD": "Una combinación de desarrollo de backend y frontend, simplemente apasionado por la tecnología.",
+        "btn1":"contáctame",
+        "btn2":"sígueme",
+        "aboutT": "Sobre mí",
+        "aboutSb": "Mi nombre es Yago, soy desarrollador web y he estado trabajando como freelancer durante aproximadamente un año. Tengo una sólida experiencia tanto en el frontend como en el backend.",
+        "aboutT2": "Más sobre mí",
+        "aboutSb2": "Mi pasión por la tecnología comenzó en 2021, cuando empecé a crear sitios web en plataformas como Shopify y Cartpanda para mi propio comercio electrónico. En 2022, me sumergí de lleno en el mundo de la programación, enfocando mi energía en aprender y aplicar mis conocimientos.",
+        "aboutSb3": "Como pasatiempo, tengo un gran interés en aprender idiomas y disfrutar de buena música. Estas actividades me proporcionan un equilibrio perfecto para complementar mi pasión por el mundo de la tecnología.",
+        "tools": "Lenguajes y Tecnologías",
+        "projectsT": "Proyectos",
+        "projectsD": "Algunos proyectos personales que he creado simplemente para practicar las tecnologías que utilizo en mi día a día.",
+        "footer": "Hoy tienes la oportunidad de construir el mañana que deseas",
+        "footer2": "Desarrollado por:"
+    }
+}
