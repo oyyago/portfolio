@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Select from "react-select";
-import br from '../assets/teste.webp';
-import us from '../assets/us.svg';
-import es from '../assets/es.svg';
+import br from '../../assets/br.svg';
+import us from '../../assets/us.svg';
+import es from '../../assets/es.svg';
 import { Flag, Father, FatherFlag } from './style';
 import { useTranslation } from "react-i18next";
 
