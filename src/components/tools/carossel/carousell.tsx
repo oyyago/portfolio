@@ -10,7 +10,7 @@ interface Tecnologia {
 
 export default function Home() {
   const { t } = useTranslation();
-  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [currentPage] = useState<number>(1);
   const ulRef = useRef<HTMLUListElement>(null);
   const scrollStep = 100;
 
