@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from '../languageSwitcher/index';
-import { Cabecalho, Photo, Embeded, MobileMenuWrapper, MobileMenu, LanguageSwitcherWrapper, Pai } from './styled';
-import im from '../../'
+import { Cabecalho, Photo, Embeded, MobileMenuWrapper, MobileMenu, LanguageSwitcherWrapper, Pai } from './styled.ts';
+import im from '../../assets/EMOJIZE.webp'
 import { Link } from 'react-scroll';
 
 export default function Header() {
@@ -11,7 +11,6 @@ export default function Header() {
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
-
     return (
         <Pai>
             <Cabecalho>
