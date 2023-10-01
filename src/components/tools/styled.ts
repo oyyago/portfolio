@@ -14,7 +14,7 @@ export const ScrollContainer = styled.div`
     padding: 5px;
   }
   @media (max-width: 480px) {
-    margin-top:1000px;
+    margin-top:740px;
         padding: 3px;
   }
 `;

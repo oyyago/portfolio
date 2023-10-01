@@ -14,28 +14,27 @@ import spring from '../../../assets/spring.svg';
 import sqlite from '../../../assets//sqlite.svg';
 import ts from '../../../assets/ts.svg';
 import vscode from '../../../assets/vscode.svg';
-
-
+import postgress from '../../../assets/postgress.png';
+import bash from '../../../assets/bash.png';
+import docker from '../../../assets/docker.png';
 
 const tecnologias = [
-  
   {
-    "titulo": "Java",
-    "caminho": java
+    "titulo": "Bootstrap",
+    "caminho": boot
   },
   {
-    "titulo": "JavaScript",
-    "caminho": js
+    "titulo":"bash",
+    "caminho":bash
   },
   {
-    "titulo": "TypeScript",
-    "caminho": ts
+    "titulo": "CSS",
+    "caminho": css
   },
   {
-    "titulo": "Spring",
-    "caminho": spring
-  },
-  {
+    "titulo": "HTML",
+    "caminho": html
+  },  {
     "titulo": "React",
     "caminho": react
   },
@@ -45,25 +44,33 @@ const tecnologias = [
     "caminho": express
   },
   {
-    "titulo": "CSS",
-    "caminho": css
-  },
-  {
-    "titulo": "HTML",
-    "caminho": html
-  },
-  {
     "titulo": "Figma",
     "caminho": figma
   },
   {
-    "titulo": "Bootstrap",
-    "caminho": boot
+    "titulo": "TypeScript",
+    "caminho": ts
+  },
+  {
+    "titulo": "Java",
+    "caminho": java
+  },
+  {
+    "titulo": "JavaScript",
+    "caminho": js
+  },
+  {
+    "titulo": "Spring",
+    "caminho": spring
   },
   {
     "titulo": "Git",
     "caminho": git
   },
+  {
+    "titulo":"docker",
+    "caminho":docker
+  },  
   {
     "titulo": "Linux",
     "caminho": linux
@@ -75,7 +82,12 @@ const tecnologias = [
   {
     "titulo": "Postman",
     "caminho": postman
+  },  
+  {
+    "titulo":"postgress",
+    "caminho":postgress
   },
+
   {
     "titulo": "VsCode",
     "caminho": vscode
@@ -83,7 +95,9 @@ const tecnologias = [
   {
     "titulo": "SQLite",
     "caminho": sqlite
-  }
+  },
+
+
 ];
 
 

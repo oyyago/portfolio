@@ -69,6 +69,7 @@ export const Embeded = styled.div`
     #54b3d6 50%,
     #000 50%
   );
+  cursor: pointer;
   margin-left: 18px;
   font-size: 14px;
   background-size: 200% 100%;
