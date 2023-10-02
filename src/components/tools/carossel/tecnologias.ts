@@ -24,7 +24,7 @@ const tecnologias = [
     "caminho": boot
   },
   {
-    "titulo":"bash",
+    "titulo":"Bash",
     "caminho":bash
   },
   {
@@ -68,7 +68,7 @@ const tecnologias = [
     "caminho": git
   },
   {
-    "titulo":"docker",
+    "titulo":"Docker",
     "caminho":docker
   },  
   {
