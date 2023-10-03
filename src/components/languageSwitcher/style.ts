@@ -53,6 +53,7 @@ margin-bottom: 0;
 margin-right: 10px;
 width:50px;
 cursor: pointer;
+border-radius: 7px;
 ` 
 
 export const Father = styled.div`

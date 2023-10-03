@@ -28,7 +28,7 @@ const FlagsSwitcher: React.FC<FlagsSwitcher> = () => {
   }
 
   return (
-    <img style={{height:"35px", width:"55px", marginRight:"5px"}} src={res} />
+    <img style={{height:"35px", width:"55px", marginRight:"5px", borderRadius:"7px"}} src={res} />
   );
 }
 

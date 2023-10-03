@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     if (ulRef.current) {
-      ulRef.current.scrollLeft = ulRef.current.scrollWidth / 2.6;
+      ulRef.current.scrollLeft = ulRef.current.scrollWidth / 3.9;
     }
   }, [currentPage]);
   

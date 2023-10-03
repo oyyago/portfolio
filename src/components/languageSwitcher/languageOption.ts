@@ -15,7 +15,7 @@ export const languageOptions: LanguageOption[] = [
         flag: us,
     },
     {
-        label: "Portugues",
+        label: "Português",
         value: "ptBR",
         flag: br,
     },

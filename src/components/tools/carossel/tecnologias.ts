@@ -24,28 +24,32 @@ const tecnologias = [
     "caminho": boot
   },
   {
-    "titulo":"Bash",
-    "caminho":bash
+    "titulo": "MySQL",
+    "caminho": mysql
+  },
+  {
+    "titulo": "Postman",
+    "caminho": postman
+  },  
+  {
+    "titulo": "VsCode",
+    "caminho": vscode
   },
   {
     "titulo": "CSS",
     "caminho": css
   },
   {
-    "titulo": "HTML",
-    "caminho": html
-  },  {
-    "titulo": "React",
-    "caminho": react
-  },
-
-  {
-    "titulo": "ExpressJs",
-    "caminho": express
-  },
-  {
     "titulo": "Figma",
     "caminho": figma
+  },
+  {
+    "titulo": "HTML",
+    "caminho": html
+  },
+  {
+    "titulo":"Bash",
+    "caminho":bash
   },
   {
     "titulo": "TypeScript",
@@ -62,42 +66,36 @@ const tecnologias = [
   {
     "titulo": "Spring",
     "caminho": spring
+  }, 
+  {
+    "titulo": "ExpressJs",
+    "caminho": express
+  },
+  {
+    "titulo": "React",
+    "caminho": react
+  },
+  {
+    "titulo": "Linux",
+    "caminho": linux
   },
   {
     "titulo": "Git",
     "caminho": git
   },
   {
+    "titulo":"postgress",
+    "caminho":postgress
+  },
+   
+  {
     "titulo":"Docker",
     "caminho":docker
   },  
   {
-    "titulo": "Linux",
-    "caminho": linux
-  },
-  {
-    "titulo": "MySQL",
-    "caminho": mysql
-  },
-  {
-    "titulo": "Postman",
-    "caminho": postman
-  },  
-  {
-    "titulo":"postgress",
-    "caminho":postgress
-  },
-
-  {
-    "titulo": "VsCode",
-    "caminho": vscode
-  },
-  {
     "titulo": "SQLite",
     "caminho": sqlite
   },
-
-
 ];
 
 
