@@ -3,13 +3,12 @@ import { useTranslation } from "react-i18next";
 import brasil from '../../assets/br.png';
 import english from '../../assets/uk.png';
 import espanish from '../../assets/es.png';
-import { Photo } from "./styled";
 
 interface FlagsSwitcher {
 }
 
 const FlagsSwitcher: React.FC<FlagsSwitcher> = () => {
-  const { t, i18n } = useTranslation();
+  const {i18n } = useTranslation();
 
   let res: string;
     console.log(i18n.language)
@@ -24,12 +23,12 @@ const FlagsSwitcher: React.FC<FlagsSwitcher> = () => {
       res = espanish;
       break;
     default:
-      res = english; // Use o inglês como padrão se o idioma não for reconhecido
+      res = english;
       break;
   }
 
   return (
-    <img style={{height:"35px", width:"55px", marginRight:"5px"}} src={res} alt="" />
+    <img style={{height:"35px", width:"55px", marginRight:"5px"}} src={res} />
   );
 }
 
