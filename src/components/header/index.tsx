@@ -23,7 +23,7 @@ export default function Header() {
                     <Link to="about" smooth={true} duration={500}>
                         {t('about')}
                     </Link>
-                    <Link to="skils" smooth={true} duration={500}
+                    <Link to="skills" smooth={true} duration={500}
                     >{t('skils')}
                     </Link>
                     <Link to="projects" smooth={true} duration={500}>{t('projects')}</Link>
