@@ -58,6 +58,19 @@ export const Cabecalho = styled.div`
     }
 `;
 
+export const PhotoEmbeded= styled.div`
+    display:flex; 
+    flex-direction: row;
+    align-items:center;
+    font-size:15px;
+    margin-left:35px;
+
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
+
+`
+
 export const Embeded = styled.div`
     display: flex;
     align-items: center;

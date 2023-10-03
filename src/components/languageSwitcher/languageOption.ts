@@ -1,6 +1,6 @@
-import br from '../../assets/br.svg';
-import us from '../../assets/us.svg';
-import es from '../../assets/es.svg';
+import br from '../../assets/br.png';
+import us from '../../assets/uk.png';
+import es from '../../assets/es.png';
 
 export interface LanguageOption {
     label: string;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Section=styled.section`
  height: 900px;
-    margin-top: 120px;
+    margin-top: 350px;
 
     h1 {
         font-family: 'Gudea', sans-serif;

@@ -48,10 +48,10 @@ p:hover::before{
 }
 `
 export const Flag = styled.img`
-height:30px;
+height:35px;
 margin-bottom: 0;
 margin-right: 10px;
-width:45px;
+width:50px;
 cursor: pointer;
 ` 
 
