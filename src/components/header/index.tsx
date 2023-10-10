@@ -20,13 +20,13 @@ export default function Header() {
                     <h2 >Yago</h2>
                 </PhotoEmbeded>
                 <Embeded>
-                    <Link to="about" smooth={true} duration={500}>
+                    <Link style={{fontSize:"20px"}} to="about" smooth={true} duration={500}>
                         {t('about')}
-                    </Link>
-                    <Link to="skils" smooth={true} duration={500}
+                    </Link >
+                    <Link style={{fontSize:"20px"}} to="skils" smooth={true} duration={500}
                     >{t('skills')}
                     </Link>
-                    <Link to="projects" smooth={true} duration={500}>{t('projects')}</Link>
+                    <Link style={{fontSize:"20px"}} to="projects" smooth={true} duration={500}>{t('projects')}</Link>
                 </Embeded>
                 <LanguageSwitcherWrapper>
                     <FlagsSwitcher />

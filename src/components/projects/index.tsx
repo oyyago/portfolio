@@ -14,15 +14,20 @@ export default function Projects() {
     <Father id="projects">
       <div style={{ textAlign: "center" }}>
         <h1 style={{
-          color:" rgb(12, 43, 151)",textDecoration:"underline"
+          fontSize: "40px",
+          color: " rgb(12, 43, 151)", textDecoration: "underline", fontFamily: 'Gudea'
         }}>{t("projectsT")}</h1>
-        <p >{t("projectsD")}</p>
+        <p style={{
+          fontFamily: 'Roboto Mono', fontSize: "20px"
+        }}>{t("projectsD")}</p>
       </div>
       <Ul>
         {projects.map((project, index) => (
           <Li key={index}>
             <img src={project.caminho} alt={project.titulo} />
-            <Son><Button target="_blank" href={project.deploy}><span>deploy</span></Button> <span>{project.titulo}</span> <Button href={project.code} target="_blank"><span>Code</span></Button></Son>
+            <Son><Button target="_blank" href={project.deploy}><span style={{
+          fontFamily: 'Gudea'}} >deploy</span></Button> <span style={{fontSize:"20px"}}>{project.titulo}</span> <Button href={project.code} target="_blank"><span style={{
+            fontFamily: 'Gudea'}} >Code</span></Button></Son>
           </Li>
         ))}
       </Ul>

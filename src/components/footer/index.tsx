@@ -5,7 +5,7 @@ import email from '../../assets/email.svg'
 import {
   MainFooter,
   Content,
-  MainFooterCopy,Links,Img,A,Sub
+  MainFooterCopy,Links,Img,A,Sub, Cont
 } from "./style";
 import { useTranslation } from "react-i18next";
 
@@ -16,10 +16,10 @@ export default function Footer() {
   return (
     <MainFooter className="container">
         <Content>
-          <div style={{marginLeft:"40px"}}>
+          <Cont>
             <h2>Yago de Sousa</h2>
             <p>{t("footer")}</p>
-          </div>
+          </Cont>
           <Sub>
             <h3>SOCIAL</h3>
             <Links><A href="https://github.com/oyyago" target='_blank'><Img src={github}></Img></A>
@@ -27,14 +27,13 @@ export default function Footer() {
             <A href="https://www.linkedin.com/in/yago-de-sousa-6b6b8a229/" target='_blank'><Img src={linkedin}></Img></A>
             <A href="mailto:yyagoaraujo@gmail.com?subject=Ola !!!&body=O  i%20Yago%20..." target='_blank'><Img src={email}></Img></A>
             </Links>
-
           </Sub>
         </Content>
 
       <MainFooterCopy>
         <p className="by">
           <i className="icon icon-heart-3"></i>
-          <a>
+          <a href='https://github.com/oyyago' target='_blank'>
             {t("footer2")} 
             Yago
           </a>

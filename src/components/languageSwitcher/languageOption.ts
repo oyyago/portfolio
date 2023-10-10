@@ -10,14 +10,14 @@ export interface LanguageOption {
 
 export const languageOptions: LanguageOption[] = [
     {
-        label: "English",
-        value: "en",
-        flag: us,
-    },
-    {
         label: "Português",
         value: "ptBR",
         flag: br,
+    },
+    {
+        label: "English",
+        value: "en",
+        flag: us,
     },
     {
         label: "Spanish",

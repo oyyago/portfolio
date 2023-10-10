@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <Father>
-      <h1>{t('tools')}</h1>
+      <h1 style={{fontFamily: 'Gudea', textDecoration:"underline"}}>{t('tools')}</h1>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <Button onClick={handleScrollLeft}>{"<"}</Button>
         <Ul ref={ulRef}>

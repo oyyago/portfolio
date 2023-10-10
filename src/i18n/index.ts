@@ -5,7 +5,7 @@ import ptJson from './translations/pt-br.json';
 import spJson from './translations/sp.json';
 
 i18n.use(initReactI18next).init({
-    fallbackLng: "en",
+    fallbackLng: "ptBR",
     interpolation: {
       escapeValue: false
     },

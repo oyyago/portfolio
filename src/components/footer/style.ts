@@ -27,7 +27,10 @@ export const Sub= styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  @media (max-width: 768px) {
+margin-left: 80px;
+}
+  
 
 `
 
@@ -44,7 +47,6 @@ export const Content = styled.div`
   justify-content: space-between;
 
   h2{
-    margin: 20px;
     font-size: 40px;
   }
   h3{
@@ -57,10 +59,15 @@ export const Content = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-
 }
 `;
+export const Cont=styled.div`
+margin-left: 40px;
 
+@media (max-width: 768px) {
+ margin:20px;
+}
+`
 
 export const Line = styled.div`
 height: 1px;
@@ -111,4 +118,5 @@ export const MainFooterCopy = styled.div`
     margin-right: 3px;
     color: #e82626;
   }
+
 `;

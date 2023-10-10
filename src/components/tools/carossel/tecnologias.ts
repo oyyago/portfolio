@@ -17,16 +17,20 @@ import vscode from '../../../assets/vscode.svg';
 import postgress from '../../../assets/postgress.png';
 import bash from '../../../assets/bash.png';
 import docker from '../../../assets/docker.png';
-
+import angular from '../../../assets/angular.svg';
 const tecnologias = [
   {
     "titulo": "Bootstrap",
     "caminho": boot
   },
+
+  
   {
-    "titulo": "MySQL",
-    "caminho": mysql
+    "titulo": "Figma",
+    "caminho": figma
   },
+
+
   {
     "titulo": "Postman",
     "caminho": postman
@@ -40,16 +44,16 @@ const tecnologias = [
     "caminho": css
   },
   {
-    "titulo": "Figma",
-    "caminho": figma
+    "titulo":"Docker",
+    "caminho":docker
+  }, 
+  {
+    "titulo": "React",
+    "caminho": react
   },
   {
-    "titulo": "HTML",
-    "caminho": html
-  },
-  {
-    "titulo":"Bash",
-    "caminho":bash
+    "titulo": "ExpressJs",
+    "caminho": express
   },
   {
     "titulo": "TypeScript",
@@ -66,14 +70,14 @@ const tecnologias = [
   {
     "titulo": "Spring",
     "caminho": spring
-  }, 
-  {
-    "titulo": "ExpressJs",
-    "caminho": express
   },
   {
-    "titulo": "React",
-    "caminho": react
+    "titulo": "Angular",
+    "caminho": angular
+  }, 
+  {
+    "titulo":"postgress",
+    "caminho":postgress
   },
   {
     "titulo": "Linux",
@@ -84,14 +88,17 @@ const tecnologias = [
     "caminho": git
   },
   {
-    "titulo":"postgress",
-    "caminho":postgress
+    "titulo": "MySQL",
+    "caminho": mysql
   },
-   
   {
-    "titulo":"Docker",
-    "caminho":docker
-  },  
+    "titulo": "HTML",
+    "caminho": html
+  },
+  {
+    "titulo":"Bash",
+    "caminho":bash
+  },
   {
     "titulo": "SQLite",
     "caminho": sqlite

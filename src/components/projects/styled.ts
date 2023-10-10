@@ -13,17 +13,20 @@ export const Ul= styled.ul`
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
-    }
+        padding: 0;
+}
 `
 
 export const Li = styled.li`
     list-style: none;
+    border-radius: 15px;
     width:250px;
     height: 200px;
     background-color: #edece8;
     border: 2px solid black;
     margin: 30px;
-    img {
+    img {  
+    border-radius: 10px;
     height: 141px;
     -webkit-filter: blur(1px);
     transition: transform 0.3s ease, filter 0.3s ease; 
@@ -35,6 +38,7 @@ export const Li = styled.li`
     width:300px;
     height: 250px;
     margin: 10;
+
     img {
     height: 168px;
     }
@@ -47,25 +51,26 @@ export const Son=styled.div`
     justify-content: space-around;
     flex-direction: row;
 
-    span{
-        text-decoration: underline;
-    }
-
 `
 
 export const Button = styled.a`
     text-decoration: none;
     color: black;
     background-color: white;
-    height: 20px;
+    height: 30px;
+    width: 60px;
     border: 2px solid black;
     display: flex;
     border-radius: 4px;
+    text-align: center;
+
     &:hover{
-        background-color: #B0B0E4;
+        background-color: black;
+        color: white;
     }
     span{
+        margin: 0;
         text-align: center;
-        margin: 1px;
+        margin: 3px;
 }
 `
