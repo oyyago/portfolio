@@ -19,13 +19,13 @@ export const projects = [
     {
         "caminho": golds,
         "titulo": "Golds-Gim",
-        "deploy": "#",
+        "deploy": "https://golds-a4nl092ho-thiagovarallo.vercel.app/",
         "code": "https://github.com/thiagovarallo/golds-gym"
     },
     {
         "caminho": wiki,
         "titulo": "Wiki Project",
-        "deploy": "https://golds-a4nl092ho-thiagovarallo.vercel.app/",
+        "deploy": "#",
         "code": "https://github.com/oyyago/Wiki"
     },
 ]
