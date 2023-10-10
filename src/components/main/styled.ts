@@ -124,7 +124,7 @@ export const Button1 = styled.a`
   width: 100%;
 }
 @media (max-width: 768px) {
-    margin-left:4px;
+    margin-left:15px;
     height: 15px;
     width: 125px;
 }
