@@ -25,7 +25,7 @@ export const projects = [
     {
         "caminho": wiki,
         "titulo": "Wiki Project",
-        "deploy": "#",
+        "deploy": "https://golds-a4nl092ho-thiagovarallo.vercel.app/",
         "code": "https://github.com/oyyago/Wiki"
     },
 ]
