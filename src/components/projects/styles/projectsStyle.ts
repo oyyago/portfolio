@@ -41,5 +41,13 @@ width: 100%;
   }
 `;
 
-export { ProjectsContainer, SectionContainer };
+const Button=styled.button`
+background-color: #4287f5;
+color: white;
+font-family: Gudea;
+height: 30px;
+border:0;
+cursor: pointer;
+`
+export { ProjectsContainer, SectionContainer,Button };
 ;

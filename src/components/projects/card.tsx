@@ -2,7 +2,7 @@ import { Code2Icon, GitForkIcon, StarIcon } from "lucide-react";
 import { Repo } from "../../types/custom";
 import { Button1, EllipsisText, FlexContainer, FlexList, FlexListItem, HoverEffectContainer } from "./styles/cardStyle";
 import deploy from '../../assets/deploy.png';
-import Github  from "../../assets/githubL.svg";
+import Github from "../../assets/githubL.svg";
 
 
 interface ProjectCardProps extends Repo { }
@@ -45,7 +45,7 @@ export function ProjectCard({
           href={html_url}
           target="_blank"
         >
-<img src={Github} alt="" />
+          <img src={Github} alt="" />
         </Button1>
         {homepage && (
           <Button1
@@ -53,7 +53,7 @@ export function ProjectCard({
             target="_blank"
           >
             <img src={deploy} alt="" />
-            </Button1>
+          </Button1>
         )}
       </FlexContainer>
     </HoverEffectContainer>

@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 import { getUserRepos } from "../../services/req";
 import { ProjectCard } from "./card";
 import { Repo } from "../../types/custom";
-import { ProjectsContainer, SectionContainer } from "./styles/projectsStyle";
+import { ProjectsContainer, SectionContainer,Button } from "./styles/projectsStyle";
 import { useTranslation } from "react-i18next";
+
 
 interface ProjectsProps {
   totalRepos: number;
@@ -32,7 +33,7 @@ export default function Projects({ totalRepos }: ProjectsProps) {
       id="projects"
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
-      <h2 style={{fontSize:"40px",fontFamily: 'Gudea',color:"#4700b3",textDecoration:"underline" }}>
+      <h2 style={{ fontSize: "40px", fontFamily: 'Gudea', color: "#4700b3", textDecoration: "underline" }}>
         {t("projectsT")}
       </h2>
 
@@ -52,12 +53,11 @@ export default function Projects({ totalRepos }: ProjectsProps) {
       </ProjectsContainer>
 
       {totalRepos > 8 && perPage < totalRepos && (
-        <button
-
+        <Button
           onClick={() => setPerPage((prevState) => prevState + 8)}
         >
-          Carregar mais
-        </button>
+          {t("moreB")}
+        </Button>
       )}
     </SectionContainer>
   );
