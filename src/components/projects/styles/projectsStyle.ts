@@ -20,8 +20,6 @@ width: 100%;
     gap: 4px;
     animation: fade-up;
     justify-items: center;
-
-
   @media (max-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -48,6 +46,10 @@ font-family: Gudea;
 height: 30px;
 border:0;
 cursor: pointer;
+
+:hover{
+  background-color: #0087F5;
+}
 `
 export { ProjectsContainer, SectionContainer,Button };
 ;
