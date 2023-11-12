@@ -9,10 +9,10 @@ export default function Portfolio() {
     return (
         <>
             <Header />
-            <Main />
-            <About />
-            <Tools />
-            <Projects />
+                <Main />
+                <About />
+                <Tools />
+                <Projects />
             <Footer />
         </>
     );

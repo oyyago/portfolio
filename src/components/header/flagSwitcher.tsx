@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import brasil from '../../assets/br.png';
 import english from '../../assets/uk.png';
-import espanish from '../../assets/es.png';
 
 interface FlagsSwitcher {
 }
@@ -18,9 +17,6 @@ const FlagsSwitcher: React.FC<FlagsSwitcher> = () => {
       break;
     case "en":
       res = english;
-      break;
-    case "sp":
-      res = espanish;
       break;
     default:
       res = english;
