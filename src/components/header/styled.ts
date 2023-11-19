@@ -68,6 +68,9 @@ export const PhotoEmbeded= styled.div`
     @media (max-width: 768px) {
         margin-left: 0;
     }
+    h2{
+        font-family: 'Gudea', sans-serif;
+    }
 
 `
 
